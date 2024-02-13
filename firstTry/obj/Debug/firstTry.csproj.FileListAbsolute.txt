@@ -1,0 +1,7 @@
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\bin\Debug\firstTry.exe.config
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\bin\Debug\firstTry.exe
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\bin\Debug\firstTry.pdb
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\obj\Debug\firstTry.csproj.AssemblyReference.cache
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\obj\Debug\firstTry.csproj.CoreCompileInputs.cache
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\obj\Debug\firstTry.exe
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\firstTry\obj\Debug\firstTry.pdb
