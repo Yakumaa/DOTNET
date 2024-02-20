@@ -48,6 +48,7 @@
     <Compile Include="CustomExceptionDemo.cs" />
     <Compile Include="ExceptionDemo.cs" />
     <Compile Include="FileReadWriteDemo.cs" />
+    <Compile Include="lambdaExpresionDemo.cs" />
     <Compile Include="MethodOverloadingDemo.cs" />
     <Compile Include="MultiLevelInheritance.cs" />
     <Compile Include="Program.cs" />
@@ -57,6 +58,9 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Questions.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

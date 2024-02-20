@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static firstTry.lambdaExpresionDemo;
 
 namespace firstTry
 {
@@ -105,7 +106,7 @@ namespace firstTry
             CustomExceptionDemo cd = new CustomExceptionDemo();
             try
             {
-                cd.setAge(14);
+                cd.setAge(19);
             }
             catch(AgeException a)
             {
@@ -114,10 +115,29 @@ namespace firstTry
 
             //Console.ReadKey();
 
-            Console.WriteLine("--file demo");
-            FileReadWriteDemo fd = new FileReadWriteDemo();
-            fd.writeFile();
-            fd.readFile();
+            //Console.WriteLine("--file demo");
+            //FileReadWriteDemo fd = new FileReadWriteDemo();
+            //fd.writeFile();
+            //fd.readFile();
+            //Console.ReadKey();
+
+            Console.WriteLine("--lambda demo");
+            lambdaExpresionDemo l1 = new lambdaExpresionDemo();
+            l1.setExpression();
+
+            //creating list of objects  and arranging in ascending order by naem
+            List<Employees> em = new List<Employees>()
+            {
+                new Employees {Id=1, Name="ram", Department="IT"},
+                new Employees {Id=2, Name="sam", Department="Support"},
+                new Employees {Id=3, Name="ham", Department="IT"},
+            };
+
+            var so1 = em.OrderBy(x => x.Name);
+            foreach(var e in so1)
+            {
+                Console.WriteLine("id is " + e.Id + "name is " + e.Name);
+            }
             Console.ReadKey();
         }
     }
