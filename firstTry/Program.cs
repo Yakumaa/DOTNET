@@ -131,12 +131,19 @@ namespace firstTry
                 new Employees {Id=1, Name="ram", Department="IT"},
                 new Employees {Id=2, Name="sam", Department="Support"},
                 new Employees {Id=3, Name="ham", Department="IT"},
+                new Employees {Id=4, Name="bam", Department="Frontend"},
+                new Employees {Id=5, Name="tam", Department="Backend"},
+                new Employees {Id=6, Name="jam", Department="Data Science"},
+                new Employees {Id=7, Name="lam", Department="Frontend"},
+                new Employees {Id=8, Name="pam", Department="Support"},
+                new Employees {Id=9, Name="yam", Department="Backend" },
+                new Employees {Id=10, Name="wam", Department="IT"},
             };
 
             var so1 = em.OrderBy(x => x.Name);
             foreach(var e in so1)
             {
-                Console.WriteLine("id is " + e.Id + "name is " + e.Name);
+                Console.WriteLine("id is " + e.Id + " name is " + e.Name + " and department is " +e.Department);
             }
             Console.ReadKey();
         }
