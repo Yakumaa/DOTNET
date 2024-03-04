@@ -1,0 +1,7 @@
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\bin\Debug\DatabaseConnectivity.exe.config
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\bin\Debug\DatabaseConnectivity.exe
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\bin\Debug\DatabaseConnectivity.pdb
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\obj\Debug\DatabaseConnectivity.csproj.AssemblyReference.cache
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\obj\Debug\DatabaseConnectivity.csproj.CoreCompileInputs.cache
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\obj\Debug\DatabaseConnectivity.exe
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\DatabaseConnectivity\obj\Debug\DatabaseConnectivity.pdb
