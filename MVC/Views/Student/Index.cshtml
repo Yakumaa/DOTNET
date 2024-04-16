@@ -1,0 +1,18 @@
+﻿@*
+   Razor sysntax is used to embedd c# Code in view (html file)
+   when page is load first razoe syntax is execute, convert it into html script and
+   page is displayed. to use syntax @ symbol is used. it can be placed anywhere in html script
+*@
+@{
+    var sem = "CSIT 6th sem";
+    for (int i = 1; i < 10; i++)
+    {
+        <h2>@i</h2>
+    }
+    if (sem == "CSIT 6th sem")
+    {
+        <h3>welcome</h3>
+    }
+}
+<h1>THis is index of student controller</h1>
+<p>You study in @sem</p>
