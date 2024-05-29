@@ -1,0 +1,7 @@
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\bin\Debug\ExamQuestions.exe.config
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\bin\Debug\ExamQuestions.exe
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\bin\Debug\ExamQuestions.pdb
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\obj\Debug\ExamQuestions.csproj.AssemblyReference.cache
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\obj\Debug\ExamQuestions.csproj.CoreCompileInputs.cache
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\obj\Debug\ExamQuestions.exe
+C:\Users\Shrijala Maharjan\Desktop\New folder\.NET\ExamQuestions\obj\Debug\ExamQuestions.pdb
