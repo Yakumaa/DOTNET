@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseExample2.cs" />
+    <Compile Include="MethodOverriding.cs" />
     <Compile Include="CallingSuperClassConstructor.cs" />
     <Compile Include="CustomExceptionDemo.cs" />
     <Compile Include="ExceptionDemo.cs" />

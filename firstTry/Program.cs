@@ -95,6 +95,9 @@ namespace firstTry
             sol1.calc1();
             sol1.calc2(30, 20);
 
+            parent obj = new child();
+            obj.display();
+
             Console.WriteLine("--exception demo");
             ExceptionDemo ed = new ExceptionDemo();
             ed.setData();

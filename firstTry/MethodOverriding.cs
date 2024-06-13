@@ -29,4 +29,21 @@ namespace firstTry
             Console.WriteLine("difference is " + (x - y));
         }
     }
+
+    class parent
+    {
+        public virtual void display()
+        {
+            Console.WriteLine("parent class display method");
+        }
+    }
+
+    class child: parent
+    {
+        public override void display()
+        {
+            //base.display(); //calling parent class method
+            Console.WriteLine("child class display method");
+        }
+    }
 }
