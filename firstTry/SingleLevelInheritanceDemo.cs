@@ -20,7 +20,7 @@ namespace firstTry
         private string name;
         private string address;
         private string department;
-
+        public int x = 10;
         //method to set initialize instamce variable
         public void setEmp(int eid, string name, string address, string department)
         {
@@ -36,6 +36,15 @@ namespace firstTry
             Console.WriteLine("name is " + this.name);
             Console.WriteLine("address is " + this.address);
             Console.WriteLine("department is " + this.department);
+        }
+
+        public Employee()
+        {
+            Console.WriteLine("parent class constructor");
+        }
+        public void print()
+        {
+            Console.WriteLine("print method of parent class");
         }
     }
 
@@ -54,6 +63,13 @@ namespace firstTry
             Console.WriteLine("specialization is " + this.specialization);
             Console.WriteLine("salary is " + this.salary);
 
+        }
+
+        public Teacher(): base()
+        {
+            Console.WriteLine("child class constructor");
+            base.print();
+            Console.WriteLine(base.x);
         }
     }
 

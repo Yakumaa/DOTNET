@@ -146,6 +146,13 @@ namespace firstTry
                 Console.WriteLine("id is " + e.Id + " name is " + e.Name + " and department is " +e.Department);
             }
             Console.ReadKey();
+
+            string[] names = new string[3] { "ram", "sam", "ham" };
+            foreach(string name in names)
+            {
+                Console.WriteLine(name);
+            }
+            Console.ReadLine();
         }
     }
 }
