@@ -98,6 +98,13 @@ namespace firstTry
             parent obj = new child();
             obj.display();
 
+            //Abstract class
+            Console.WriteLine("--abstract class demo");
+            DerivedClass dc = new DerivedClass();
+            //AbsClass ac = new AbsClass();  //cannot create object of abstract class
+            dc.AbsMethod();
+            dc.NonAbsMethod();
+
             Console.WriteLine("--exception demo");
             ExceptionDemo ed = new ExceptionDemo();
             ed.setData();
