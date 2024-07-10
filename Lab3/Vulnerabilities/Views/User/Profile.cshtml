@@ -1,0 +1,17 @@
+﻿@model User
+
+<h2>Profile</h2>
+
+<p>Username: @Model.Username</p>
+<p>Email: @Model.Email</p>
+
+@using (Html.BeginForm("UpdateProfile", "User", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+    <button type="submit">Update Email</button>
+}
