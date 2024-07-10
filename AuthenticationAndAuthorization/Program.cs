@@ -10,6 +10,15 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Home/Login";  //home->controller, login ->action method
         //options.AccessDeniedPath = "/Account/AccessDenied";
     });
+
+// Authorization configuration using Policy
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("User", policy => policy.RequireRole("User"));
+    options.AddPolicy("AdminOrUser", policy => policy.RequireRole("Admin", "User"));
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
