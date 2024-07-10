@@ -1,0 +1,5 @@
+﻿1. Explain how .net applications are compiled and executed
+2. Explain architecture of .net
+3. Explain request and response message format of http?
+4. Explain ASP.net core architecture
+5. Differentiate between .net and asp.net
