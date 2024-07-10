@@ -96,7 +96,9 @@ namespace firstTry
             sol1.calc2(30, 20);
 
             parent obj = new child();
+            child obj1 = new child();
             obj.display();
+            obj1.display();
 
             //Abstract class
             Console.WriteLine("--abstract class demo");
