@@ -46,6 +46,7 @@
     <Compile Include="Constructor_Indexers_Encapsulation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
