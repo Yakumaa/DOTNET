@@ -1,96 +1,130 @@
-﻿using Antlr.Runtime.Tree;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace userRegistration
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { }
 
-        }
-        protected void btn_submit(object sender, EventArgs e)
+        protected void SignUp(object sender, EventArgs e)
         {
-            //extracting for feilds
-            string username = uname.Text;
-            string password = pass.Text;
-            string repassword = repass.Text;
-         
-            string gender;
-            if (r1.Checked)
+            String usernameValue = username.Text;
+            String passwordValue = password.Text;
+            String rePasswordValue = rePassword.Text;
+
+            // check if username and password are empty
+            if (usernameValue == "" || passwordValue == "" || rePasswordValue == "")
             {
-                gender = r1.Text;
-            }
-            else if (r2.Checked)
-            {
-                gender = r2.Text;
-            }
-            else
-            {
-                l7.Text = "Please select a gender";
+                result.Text = "Please fill all the fields";
                 return;
             }
 
-            string courses = "";
-            if (c1.Checked)
+            // check if the password and confirm password are same
+            if (passwordValue != rePasswordValue)
             {
-                courses += c1.Text + ", ";
-            }
-            if (c2.Checked)
-            {
-                courses += c2.Text + ", ";
-            }
-            if (c3.Checked)
-            {
-                courses += c3.Text + ", ";
+                result.Text = "Passwords do not match";
+                return;
             }
 
-            string coun = "";
-            if (country.SelectedValue == "")
+            // check if the gender is selected
+            string gender; // it is a radio button so we need to check which one is selected
+            if (male.Checked)
             {
-                coun = "enter your country";
+                gender = male.Text;
+            }
+            else if (female.Checked)
+            {
+                gender = female.Text;
             }
             else
             {
-                coun = country.SelectedValue;
+                result.Text = "Please select a gender";
+                return;
             }
 
-            string cs = "Data Source=SHRIJALA-PC\\SQLEXPRESS;Initial Catalog=db_prime;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(cs);
+            // select courses
+            string courses = "";
+            // if none of the courses are selected, return an error
+            if (!c.Checked && !cpp.Checked && !java.Checked)
+            {
+                result.Text = "Please select a course";
+                return;
+            }
 
+            if (c.Checked)
+            {
+                courses += c.Text + ", ";
+            }
+            if (cpp.Checked)
+            {
+                courses += cpp.Text + ", ";
+            }
+            if (java.Checked)
+            {
+                courses += java.Text + ", ";
+            }
+
+            // check if the country is chosen
+            string countryValue;
+            if (country.SelectedValue != "")
+            {
+                countryValue = country.SelectedValue;
+            }
+            else
+            {
+                result.Text = "Please select a country";
+                return;
+            }
+
+            string connectionString = "Data Source=SHRIJALA-PC\\SQLEXPRESS;Initial Catalog=db_prime;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(connectionString);
             try
             {
                 conn.Open();
-                string insQuery = "insert into tbl_reg (username, password, gender, courses, country) VALUES (" +
+                string query = "insert into tbl_reg (username, password, gender, courses, country) VALUES (" +
                     "@username, @password, @gender, @courses, @country)";
-          
-                SqlCommand sc = new SqlCommand(insQuery, conn);
-                sc.Parameters.AddWithValue("@username", username);
-                sc.Parameters.AddWithValue("@password", password);
-                sc.Parameters.AddWithValue("@repassword", repassword);
+                SqlCommand sc = new SqlCommand(query, conn);
+                sc.Parameters.AddWithValue("@username", usernameValue);
+                sc.Parameters.AddWithValue("@password", passwordValue);
+                sc.Parameters.AddWithValue("@repassword", rePasswordValue);
                 sc.Parameters.AddWithValue("@gender", gender);
                 sc.Parameters.AddWithValue("@courses", courses);
-                sc.Parameters.AddWithValue("@country", coun);
+                sc.Parameters.AddWithValue("@country", countryValue);
 
                 int res = sc.ExecuteNonQuery();
+                // reset the form
+                username.Text = "";
+                password.Text = "";
+                rePassword.Text = "";
+                // deselect the radio buttons
+                male.Checked = false;
+                female.Checked = false;
+                // deselect the checkboxes
+                c.Checked = false;
+                cpp.Checked = false;
+                java.Checked = false;
+                // deselect the dropdown
+                country.SelectedIndex = 0;
+
+
                 if (res > 0)
                 {
-                    l7.Text = "data inserted";
+                    result.Text = "Registration successful";
                 }
                 else
                 {
-                    l7.Text = "data not inserted";
+                    result.Text = "Registration failed";
                 }
             }
             catch (SqlException error)
             {
-                l7.Text = error.Message;
+                result.Text = error.Message;
+            }
+            finally
+            {
+                conn.Close();
             }
         }
     }

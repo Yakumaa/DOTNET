@@ -15,139 +15,139 @@ namespace userRegistration
     {
 
         /// <summary>
-        /// form1 control.
+        /// registrationForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm registrationForm;
 
         /// <summary>
-        /// l1 control.
+        /// usernameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l1;
+        protected global::System.Web.UI.WebControls.Label usernameLabel;
 
         /// <summary>
-        /// uname control.
+        /// username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uname;
+        protected global::System.Web.UI.WebControls.TextBox username;
 
         /// <summary>
-        /// l2 control.
+        /// passwordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l2;
+        protected global::System.Web.UI.WebControls.Label passwordLabel;
 
         /// <summary>
-        /// pass control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pass;
+        protected global::System.Web.UI.WebControls.TextBox password;
 
         /// <summary>
-        /// l3 control.
+        /// rePasswordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l3;
+        protected global::System.Web.UI.WebControls.Label rePasswordLabel;
 
         /// <summary>
-        /// repass control.
+        /// rePassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox repass;
+        protected global::System.Web.UI.WebControls.TextBox rePassword;
 
         /// <summary>
-        /// l4 control.
+        /// genderLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l4;
+        protected global::System.Web.UI.WebControls.Label genderLabel;
 
         /// <summary>
-        /// r1 control.
+        /// male control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton r1;
+        protected global::System.Web.UI.WebControls.RadioButton male;
 
         /// <summary>
-        /// r2 control.
+        /// female control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton r2;
+        protected global::System.Web.UI.WebControls.RadioButton female;
 
         /// <summary>
-        /// l5 control.
+        /// courses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l5;
+        protected global::System.Web.UI.WebControls.Label courses;
 
         /// <summary>
-        /// c1 control.
+        /// c control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox c1;
+        protected global::System.Web.UI.WebControls.CheckBox c;
 
         /// <summary>
-        /// c2 control.
+        /// cpp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox c2;
+        protected global::System.Web.UI.WebControls.CheckBox cpp;
 
         /// <summary>
-        /// c3 control.
+        /// java control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox c3;
+        protected global::System.Web.UI.WebControls.CheckBox java;
 
         /// <summary>
-        /// l6 control.
+        /// countryLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l6;
+        protected global::System.Web.UI.WebControls.Label countryLabel;
 
         /// <summary>
         /// country control.
@@ -168,12 +168,12 @@ namespace userRegistration
         protected global::System.Web.UI.WebControls.Button submit;
 
         /// <summary>
-        /// l7 control.
+        /// result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label l7;
+        protected global::System.Web.UI.WebControls.TextBox result;
     }
 }

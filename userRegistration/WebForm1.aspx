@@ -7,37 +7,62 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="registrationForm" runat="server">
+        <!-- Username -->
         <div>
-            <asp:Label id="l1" Text ="Username" runat = "server"></asp:Label>
-            <asp:TextBox ID="uname" runat = "server"></asp:TextBox><br />
+            <asp:Label ID="usernameLabel" runat="server" Text="Username"></asp:Label>
+            <asp:TextBox ID="username" runat="server"></asp:TextBox>
+        </div>
 
-            <asp:Label ID="l2" Text ="Password" runat = "server"></asp:Label>
-            <asp:TextBox ID="pass"  TextMode="Password" runat="server"></asp:TextBox><br />
+        <!-- Password -->
+        <div>
+            <asp:Label ID="passwordLabel" runat="server" Text="Password"></asp:Label>
+            <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
+        </div>
 
-            <asp:Label ID="l3" Text ="RePassword" runat = "server"></asp:Label>
-            <asp:TextBox ID="repass"  TextMode="Password" runat="server"></asp:TextBox><br />
+        <!-- Re-password -->
+        <div>
+            <asp:Label ID="rePasswordLabel" runat="server" Text="Re-Password"></asp:Label>
+            <asp:TextBox ID="rePassword" runat="server" TextMode="Password"></asp:TextBox>
+        </div>
 
-            <asp:Label ID="l4" Text ="Gender" runat = "server"></asp:Label>
-            <asp:RadioButton ID="r1" Text="male" GroupName="gender" value="male" runat="server"></asp:RadioButton><br />
-            <asp:RadioButton ID="r2" Text="female" GroupName="gender" value="female" runat="server"></asp:RadioButton><br />
+        <!-- Gender radio button field -->
+        <div>
+            <asp:Label ID="genderLabel" Text="Gender" runat="server"></asp:Label>
+            <div>
+                <asp:RadioButton ID="male" runat="server" Text="Male" GroupName="Gender" />
+                <asp:RadioButton ID="female" runat="server" Text="Female" GroupName="Gender" />
+            </div>
+        </div>
 
-            <asp:Label ID="l5" Text ="Course" runat = "server"></asp:Label>
-            <asp:CheckBox ID="c1" Text="C" value="C" runat="server" /><br />
-            <asp:CheckBox ID="c2" Text="C++" value="C++" runat="server" /><br />
-            <asp:CheckBox ID="c3" Text="java" value="java" runat="server" /><br />
+        <!-- Courses checkbox field -->
+        <div>
+            <asp:Label ID="courses" Text="Courses" runat="server"></asp:Label>
+            <asp:CheckBox ID="c" Text="C" runat="server" />
+            <asp:CheckBox ID="cpp" Text="C++" runat="server" />
+            <asp:CheckBox ID="java" Text="Java" runat="server" />
+        </div>
 
-            <asp:Label ID="l6" Text ="Country" runat = "server"></asp:Label>
+        <!-- Country dropdown field -->
+        <div>
+            <asp:Label ID="countryLabel" Text="Country" runat="server"></asp:Label>
             <asp:DropDownList ID="country" runat="server">
-              <asp:ListItem Value="">Select your country</asp:ListItem>
-              <asp:ListItem>Nepal</asp:ListItem>
-              <asp:ListItem>China</asp:ListItem>
-              <asp:ListItem>India</asp:ListItem>
-              <asp:ListItem>Other</asp:ListItem>
+                <asp:ListItem Value="">Select your country</asp:ListItem>
+                <asp:ListItem>Nepal</asp:ListItem>
+                <asp:ListItem>India</asp:ListItem>
+                <asp:ListItem>USA</asp:ListItem>
+                <asp:ListItem>UK</asp:ListItem>
             </asp:DropDownList>
+        </div>
 
-            <asp:Button ID="submit" Text="submit" OnClick="btn_submit" runat="server"></asp:Button>
-            <asp:Label ID="l7" Text ="Result" runat = "server"></asp:Label>
+        <!-- Submit button -->
+        <div>
+            <asp:Button ID="submit" Text="Submit" runat="server" OnClick="SignUp" />
+        </div>
+
+        <!-- Result content -->
+        <div>
+            <asp:TextBox ID="result" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
